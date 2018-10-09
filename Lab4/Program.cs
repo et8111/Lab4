@@ -11,7 +11,7 @@ namespace Lab4
         static void Main(string[] args)
         {
             bool s = true;
-            double num = 0.0;
+            double num = 0;
             while (s)
             {
                 try
