@@ -14,16 +14,21 @@ namespace Lab4
             double num = 0;
             while (s)
             {
-                try
+                Console.Write("Gim'me a num: ");
+                if (!double.TryParse(Console.ReadLine(), out num))
                 {
-                    Console.Write("Gim'me a num: ");
+                    Console.WriteLine("NO.");
+                    continue;
+                }
+                /*try
+                {
                     num = double.Parse(Console.ReadLine());
                 }
                 catch(Exception ex)
                 {
                     Console.WriteLine("SHIT code: " + ex.Message);
                     continue;
-                }
+                }*/
                 Console.WriteLine("Numah".PadRight(10) + "Square".PadRight(10) + "Cubed".PadRight(10));
                 Console.WriteLine("#####".PadRight(10) + "######".PadRight(10) + "#####".PadRight(10));
                 for (int i = 0; i < num; i++)
