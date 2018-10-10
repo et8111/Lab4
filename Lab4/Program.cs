@@ -10,6 +10,7 @@ namespace Lab4
     {
         static void Main(string[] args)
         {
+            //ADDING STUFF TO TEST GIT AND NOT VS GITHUB
             bool s = true;
             double num = 0;
             while (s)
